@@ -35,6 +35,7 @@ header{
     color:white;
     border-radius: 8px;
     border-style: none;
+    cursor: pointer;
 }
 
 .fa-circle-play, .fa-stop, .fa-pause, .fa-users-viewfinder{
@@ -50,26 +51,42 @@ header{
 .container{
     display: flex;
     width: 90%;
-    height: calc (100vh - 90px);
+    height: calc(100vh - 110px);
     margin:auto;
     margin-top: 20px;
     flex-wrap: wrap;
     gap: 5px;
     border-radius: 10px;
     align-content: flex-start;
+    overflow-y: auto;
 }
-
 
 .foto{
     display: flex;
     width: calc(100% / 6 - 5px);
     height:150px;
-    background-image: url(https://picsum.photos/id/237/200/300);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    overflow-y: auto;
 }
+
+.foto-1{
+    background-image: url(https://us.123rf.com/450wm/fizkes/fizkes1907/fizkes190701409/127863359-colpo-di-testa-positivo-millenario-donna-seduta-sul-divano-da-sola-nel-soggiorno-di-casa-guardando-l.jpg?ver=6);
+}
+
+.foto-2{
+    background-image: url(https://us.123rf.com/450wm/instaphotos/instaphotos2010/instaphotos201000046/156897347-.jpg?ver=6);
+}
+
+.foto-3{
+    background-image: url(https://us.123rf.com/450wm/fizkes/fizkes2001/fizkes200100220/136981192-felice-studentessa-indiana-indossa-le-cuffie-studia-online-con-webcam-insegnante-scrivi-note-felice-.jpg?ver=6);
+}
+
+.foto-4{
+    background-image: url(https://t3.ftcdn.net/jpg/03/30/61/64/360_F_330616477_63yejJ2Q49ewN5wZ0CnXWnykBCGF1Vty.jpg);
+}
+
+
 .mic-name{
     display: flex;
     justify-content: flex-start;
@@ -100,7 +117,7 @@ footer{
     padding: 0 15px;
 }
 
-.container-mic-video{
+.container-icon{
     display: flex;
     color: white;
     text-align: center;
@@ -110,13 +127,14 @@ footer{
     font-size: 10px;
     margin: 10px 0px;
 }
-.michrophone-icon, .video-icon{
+.type-of-icon{
     text-align: center;
     align-items: center;
     font-size: 20px;
 }
-.mic-video{
+.icons{
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .end-lesson{
@@ -126,5 +144,13 @@ footer{
     border-radius: 10px;
     border-style: none;
     font-weight: 900;
+    cursor: pointer;
 }
 
+.fa-share-from-square{
+color: #67d669;
+}
+
+.share-screen{
+    color: #67d669;
+}
