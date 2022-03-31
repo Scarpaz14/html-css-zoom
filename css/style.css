@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: #111111;
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER-----------  */
@@ -13,9 +14,117 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    height:30px;
 }
 
 .register-container, .wiew-container{
     display: flex;
     color:white;
+    width: 100px;
+    height:30px;
+    column-gap: 10px;
+    padding-top: 5px;
+    
 }
+.icon-verified, .icon-start-stop-pause, .icon-wiew{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    padding: 5px;
+    background-color: #0a0b0b;
+    color:white;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.fa-circle-play, .fa-stop, .fa-pause, .fa-users-viewfinder{
+    padding: 0 8px;
+}
+
+.icon-verified{
+    color: #67d669 ;
+}
+
+/* MAIN---------------  */
+
+.container{
+    display: flex;
+    width: 90%;
+    height: calc (100vh - 90px);
+    margin:auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-radius: 10px;
+    align-content: flex-start;
+}
+
+
+.foto{
+    display: flex;
+    width: calc(100% / 6 - 5px);
+    height:150px;
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.mic-name{
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    background-color: #38434b;
+    color:white;
+    height: 25px;
+    align-items: center;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.fa-microphone-slash{
+    color:red;
+    margin-right: 10px;
+}
+
+/* FOOTER------  */
+
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #1b1b1b;
+    height:60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.container-mic-video{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.check, .thirty-six{
+    font-size: 10px;
+    margin: 10px 0px;
+}
+.michrophone-icon, .video-icon{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+.mic-video{
+    margin: 0 10px;
+}
+
+.end-lesson{
+    background-color: red;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 900;
+}
+
